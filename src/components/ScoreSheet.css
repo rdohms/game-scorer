@@ -1,0 +1,132 @@
+.score-sheet {
+  width: 100%;
+}
+
+.score-sheet__resume-prompt {
+  text-align: center;
+  padding: 2rem;
+  background: var(--color-surface);
+  border-radius: 12px;
+  border: 2px solid var(--color-border);
+}
+
+.score-sheet__resume-prompt p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.score-sheet__resume-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.score-sheet__alert {
+  padding: 0.75rem 1rem;
+  background: var(--color-warning-bg);
+  color: var(--color-warning-text);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.score-sheet__table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 2px solid var(--color-border);
+}
+
+.score-sheet__table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.score-sheet__table thead {
+  background: var(--color-header-bg);
+}
+
+.score-sheet__table th {
+  padding: 0.75rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.score-sheet__header-name {
+  text-align: left;
+  position: sticky;
+  left: 0;
+  background: var(--color-header-bg);
+  z-index: 2;
+  min-width: 150px;
+  padding-left: 1rem !important;
+}
+
+.score-sheet__header-round {
+  min-width: 80px;
+}
+
+.score-sheet__header-round--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.score-sheet__header-bonus {
+  min-width: 80px;
+  color: var(--color-bonus-text);
+}
+
+.score-sheet__header-total {
+  min-width: 80px;
+  position: sticky;
+  right: 0;
+  background: var(--color-header-bg);
+  z-index: 2;
+}
+
+.score-sheet__table tbody tr {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.score-sheet__table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.score-sheet__table tbody tr:hover {
+  background-color: var(--color-hover-bg);
+}
+
+.score-sheet__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.score-sheet__winner-banner {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--color-winner-bg);
+  color: var(--color-winner-text);
+  border-radius: 12px;
+  animation: winner-pop 0.4s ease-out;
+}
+
+@keyframes winner-pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

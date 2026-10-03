@@ -1,0 +1,17 @@
+{
+  "id": "phase-10",
+  "name": "Phase 10",
+  "description": "Complete all 10 phases first! Penalty points for cards left in hand (1-9 = 5pts, 10-12 = 10pts, Skip = 15pts, Wild = 25pts).",
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "scoring": {
+    "rounds": null,
+    "roundLabel": "Hand",
+    "endGameBonuses": [],
+    "endGame": {
+      "trigger": "manual",
+      "description": "End when a player completes Phase 10 and goes out. Lowest score wins (ties broken by highest phase completed)."
+    },
+    "lowerIsBetter": true
+  }
+}

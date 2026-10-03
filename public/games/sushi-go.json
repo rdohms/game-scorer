@@ -1,0 +1,23 @@
+{
+  "id": "sushi-go",
+  "name": "Sushi Go!",
+  "description": "Draft and pass sushi cards to build the best meal!",
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "scoring": {
+    "rounds": 3,
+    "roundLabel": "Round",
+    "endGameBonuses": [
+      {
+        "key": "pudding",
+        "label": "Pudding",
+        "description": "Most puddings = +6, Least = -6"
+      }
+    ],
+    "endGame": {
+      "trigger": "rounds",
+      "description": "After 3 rounds, score pudding bonuses."
+    },
+    "lowerIsBetter": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "take-5",
+  "name": "Take 5 (6 Nimmt!)",
+  "description": "Avoid collecting bull heads! Lowest penalty score wins.",
+  "minPlayers": 2,
+  "maxPlayers": 10,
+  "scoring": {
+    "rounds": null,
+    "roundLabel": "Round",
+    "endGameBonuses": [],
+    "endGame": {
+      "trigger": "threshold",
+      "threshold": 66,
+      "description": "Game ends when any player reaches 66+ bull heads."
+    },
+    "lowerIsBetter": true
+  }
+}

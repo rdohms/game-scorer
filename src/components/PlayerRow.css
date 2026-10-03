@@ -1,0 +1,141 @@
+.player-row {
+  transition: background-color 0.2s ease;
+}
+
+.player-row--winner {
+  background-color: var(--color-winner-bg) !important;
+}
+
+.player-row__name-cell {
+  position: sticky;
+  left: 0;
+  background: var(--color-surface);
+  z-index: 1;
+  min-width: 150px;
+}
+
+.player-row--winner .player-row__name-cell {
+  background: var(--color-winner-bg);
+}
+
+.player-row__name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.player-row__name {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: transparent;
+  color: var(--color-text);
+  min-width: 0;
+}
+
+.player-row__name:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  background: var(--color-surface);
+}
+
+.player-row__name::placeholder {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.player-row__remove {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-danger);
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+
+.player-row__remove:hover {
+  opacity: 1;
+}
+
+.player-row__score-cell {
+  text-align: center;
+  min-width: 80px;
+}
+
+.player-row__score-cell--active {
+  background-color: var(--color-active-bg);
+}
+
+.player-row__score-cell--past {
+  opacity: 0.6;
+}
+
+.player-row__score-cell--future {
+  opacity: 0.3;
+}
+
+.player-row__score-cell--bonus {
+  background-color: var(--color-bonus-bg);
+}
+
+.player-row__score-input {
+  width: 100%;
+  max-width: 70px;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  -moz-appearance: textfield;
+}
+
+.player-row__score-input::-webkit-inner-spin-button,
+.player-row__score-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.player-row__score-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-alpha);
+}
+
+.player-row__score-input:disabled {
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.player-row__total-cell {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 80px;
+  position: sticky;
+  right: 0;
+  background: var(--color-surface);
+}
+
+.player-row--winner .player-row__total-cell {
+  background: var(--color-winner-bg);
+  color: var(--color-winner-text);
+}
+
+.player-row__total {
+  display: inline-block;
+  min-width: 2ch;
+}
